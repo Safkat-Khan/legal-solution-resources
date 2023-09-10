@@ -16,9 +16,135 @@
         href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;600;800&display=swap"
         rel="stylesheet">
 </head>
+<style>
+    .font-family {
+        font-family: 'EB Garamond', serif;
+        font-family: 'Poppins', sans-serif;
+    }
+</style>
+<!-- Custome Color -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'col-primary':'#B68C5A',
+          }
+        }
+      }
+    }
+  </script>
 
-<body>
+<body class="font-family">
+    <header class="px-80 py-10">
+        <nav>
+            <div>
+                <div class="navbar bg-base-100">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <img src="images/logo2.png" alt="">
+                            <label tabindex="0" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </label>
 
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a>Home</a></li>
+                                <li>
+                                    <a>Services</a>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>Cases</a>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>Blog</a>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>Contact Us</a>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a>Home</a></li>
+                            <li tabindex="0">
+                                <details>
+                                    <summary>Services</summary>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li tabindex="0">
+                                <details>
+                                    <summary>Cases</summary>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li tabindex="0">
+                                <details>
+                                    <summary>Blog</summary>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li tabindex="0">
+                                <details>
+                                    <summary>Contact Us</summary>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end">
+                        <a class="btn col-primary bg-col-primary text-white">Free Consultation</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="px-80">
+        <section>
+            
+        </section>
+    </main>
+
+
+    <footer>
+
+    </footer>
 </body>
 
 </html>
