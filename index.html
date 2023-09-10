@@ -17,26 +17,29 @@
         rel="stylesheet">
 </head>
 <style>
-    .font-family {
+    .font-family-eb {
         font-family: 'EB Garamond', serif;
+       
+    }
+    .font-family-po{
         font-family: 'Poppins', sans-serif;
     }
 </style>
 <!-- Custome Color -->
 <script>
     tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-            'col-primary':'#B68C5A',
-          }
+        theme: {
+            extend: {
+                colors: {
+                    clifford: '#da373d',
+                    'col-primary': '#B68C5A',
+                }
+            }
         }
-      }
     }
-  </script>
+</script>
 
-<body class="font-family">
+<body class="font-family-eb font-family-po">
     <header class="px-80 py-10">
         <nav>
             <div>
@@ -128,7 +131,7 @@
                         </ul>
                     </div>
                     <div class="navbar-end">
-                        <a class="btn col-primary bg-col-primary text-white">Free Consultation</a>
+                        <a class="btn btn-active col-primary bg-col-primary text-white">Free Consultation</a>
                     </div>
                 </div>
             </div>
@@ -137,7 +140,16 @@
 
     <main class="px-80">
         <section>
-            
+            <img src="images/banner.png" alt="">
+            <div class="text-center -mt-80 ">
+                <h1 class="font-family-eb text-6xl text-white ">We Provide Effective <br> Legal Solutions</h1>
+                <h2 class="my-5 text-xs font-family-po  text-white">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered
+                    alteration in some form, by injected humour.</h2>
+                    <div class="flex justify-center rounded-md">
+                        <div><input type="text" placeholder="Search your services" class="input input-bordered w-96 mr-5" /></div>
+                        <div><button class="btn btn-active col-primary bg-col-primary text-white rounded-md w-32">Search</button></div>
+                    </div>
+            </div>
         </section>
     </main>
 
